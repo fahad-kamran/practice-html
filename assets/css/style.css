@@ -1,0 +1,160 @@
+:root {
+    --color-primary: #00203FFF;
+    --color-secondary: rgb(73, 73, 73);
+    --font-primary: 'system-ui';
+    --font-secondary: sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--font-primary) !important;
+    color: var(--color-secondary);
+}
+.text-primary {
+    color: var(--color-primary) !important;
+}
+.text-secondary {
+    color: var(--color-secondary) !important;
+}
+.bg-primary {
+    background-color: var(--color-primary) !important;
+}
+.bg-secondary {
+    background-color: var(--color-secondary) !important;
+}
+a {
+    text-decoration: none;
+}
+.link-primary {
+    color: var(--color-primary) !important;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fs-10 {
+    font-size: 10px;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+.fs-14 {
+    font-size: 14px;
+}
+.fs-16 {
+    font-size: 16px;
+}
+.fs-18 {
+    font-size: 18px;
+}
+.fs-20 {
+    font-size: 20px;
+}
+.text-justify {
+    text-align: justify;
+}
+/* navbar css */
+.navbar .logo{
+    font-size: 30px;
+}
+.navbar .nav-item {
+    padding: 6px 10px;
+}
+.nav-item .nav-link{
+    font-weight: 500;
+    position: relative;
+}
+.nav-item .nav-link::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #000;
+    transition: all .3s ease-in-out;
+}
+.nav-item .nav-link:hover::after{
+    width: 100%;
+    left: 0;
+}
+/* navbar css */
+/* header css */
+.header-carousel-control {
+    background: #fff;
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+    top: calc(50% - 25px);
+    color: #000;
+}
+.header-carousel-control:hover {
+    background: var(--color-secondary);
+    color: #fff;
+}
+.header-carousel-control:focus {
+    background: var(--color-secondary);
+    color: #fff;
+}
+/* header css */
+/* services css */
+.services-icon-container{
+    width: 70px;
+    height: 70px;
+    background-color: var(--color-secondary);
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+.services-icon-container .icon{
+    font-size: 25px;
+}
+.services-icon-container:hover{
+    background-color: #fff;
+    color: var(--color-primary);
+}
+/* services css */
+/* happy clients css */
+.clients-section{
+    background-image: url('../images/client-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+}
+.clients-section::before{
+    background: rgba(0, 0, 0, 0.7);
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+.happy_clients_carousel img{
+    width: auto !important;
+    height: auto;
+    border-radius: 50%;
+    margin: auto;
+}
+/* happy clients css */
+/* footer-section css */
+.list-style-none {
+    list-style: none;
+    padding-left: 0;
+}
+.footer-item {
+    padding: 8px 0px;
+}
+.footer-link {
+    color: #fff;
+}
+.footer-link:hover {
+    color: #fff;
+}
+.fw-500 {
+    font-weight: 500;
+}
+/* footer-section css */
